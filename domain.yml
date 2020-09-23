@@ -1,0 +1,84 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - how_it_works
+  - returns
+  - thanks
+  - who_wins 
+  - inform
+  - out_of_scope
+
+slots:
+  name:
+    type: unfeaturized
+  email:
+    type: unfeaturized
+  age:
+    type: unfeaturized
+  phone:
+    type: unfeaturized
+  location:
+    type: unfeaturized
+
+
+entities:
+  - name
+  - email
+  - age
+  - phone
+  - location
+
+responses:
+  utter_greet:
+  - text: "Hello there."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a chatbot."
+
+  utter_how_it_works:
+  - text: "You simply register onto the platform and once we confirm your email and CC details, you then submit a bidding application based on your maximum bid, coupled with some simple questions and requests."
+  
+  utter_returns:
+  - text:  "Please review our Returns Policy www.bargainbid.com.au/returns"
+
+  utter_youre_welcome:
+  - text: "you're welcome"
+
+  utter_talk_to_human_response:
+  - text: "Unfortunately this is purely an online service so if you have any questions please email our team on sales@bargainbid.com.au"
+  
+  utter_who_wins:
+  - text: "We at Bargain Bid will allocate winning bids to applicants who we feel is best suited to the product, on offer. \n Furthermore the highest bid will not necessarily win the auction, as information you enter will allow our automated system to determine the most suitable buyer based on the questionnaire and also a buyer’s ability to further promote our products to friends and social media."
+
+  utter_would_you_like_to_continue:
+  - text: "Would you like to continue by giving me your information?"
+  utter_great_question:
+    - text: "Thats's a great question, "
+
+  utter_ask_age:
+    - text: "What's you age?"
+  
+  utter_ask_email:
+    - text: "what's your Email address?"
+  
+  utter_ask_name:
+    - text: "What's your name?"
+  
+  utter_ask_phone:
+    - text: "What's your phone number?" 
+  
+  utter_ask_location:
+    - text: "where are you located?" 
+
+forms:
+  - user_info
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
