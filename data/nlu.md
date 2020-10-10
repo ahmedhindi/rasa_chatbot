@@ -29,6 +29,7 @@
 - aha
 - ok
 - okay great
+- why not 
 
 ## intent:deny
 - no
@@ -38,6 +39,7 @@
 - no way
 - not really
 - nope
+- no thanks
 
 ## intent:bot_challenge
 - are you a bot?
@@ -52,42 +54,44 @@
 - how does the website work
 - and does the bidding work?
 
-## intent: returns
+## intent:returns
 - what is the returns policy
-- how to i return stuff 
+- how to i return stuff
 - can i return items
 - what is the refund policy
-- can you refun me? 
-- can i get a refund? 
+- can you refun me?
+- can i get a refund?
+- can i return items?
 
-
-## intent: talk_to_human 
+## intent:talk_to_human
 - can i talk to a human please
 - can i talk to a real person
 - can i chat with a real person
-- i don't want to talk to a chatbot 
+- i don't want to talk to a chatbot
 - i don't want to talk to a robot
 - i want to chat with a real human
 
-## intent: thanks
+## intent:thanks
 - thank you
-- thanks 
+- thanks
 - cheers mate
 - thanks mate
 - thank you so much
 
-## intent: who_wins
+## intent:who_wins
 - How do determin the winning bid?
 - How is the winning bid determined?
 - How do i win the bid
 - who wins the bid
-- who gets the item 
+- who gets the item
 
-##intent: inform
+## intent:inform
 - my name is [Ahmed Hindi](name)
 - it's [Denzel Washington](name)
+- [Ashma Logan](name)
 - I'm [29 years](age)
-- I'm [60](age) 
+- I'm [60](age)
+- it's [90](age)
 - [55 years](age) old
 - my email address is [ahmedelsaye5@yahoo.com](email)
 - my email [seanomally1998@gmail.com](email)
@@ -100,14 +104,18 @@
 - I'm in [4 James St, Summer Hill Sydney, NSW 2130](location)
 - [in Sydney](location)
 
-##intent: out_of_scope
+## intent:out_of_scope
 - no stop
-- stop this 
+- stop this
 - wait a minute
 - i don't care
-- i wanna get a pizza 
+- i wanna get a pizza
 - what is the weather
-- i don't wanna share that 
+- i don't wanna share that
 - i don't want to give you my address
-- nevermind 
+- nevermind
 - i changed my mind
+- fuck off 
+- how old are you 
+- how are you doing 
+- how are you

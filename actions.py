@@ -2,11 +2,12 @@ from typing import Any, Text, Dict, List, Union
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.forms import FormAction
 
 
-class UserInfo(Action):
+class UserInfo(FormAction):
     def name(self) -> Text:
-        return "user_action"
+        return "user_info"
 
     @staticmethod
     def required_slots(tracker):
