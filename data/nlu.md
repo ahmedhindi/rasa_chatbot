@@ -29,7 +29,7 @@
 - aha
 - ok
 - okay great
-- why not 
+- why not
 
 ## intent:deny
 - no
@@ -89,12 +89,13 @@
 - my name is [Ahmed Hindi](name)
 - it's [Denzel Washington](name)
 - [Ashma Logan](name)
-- I'm [29 years](age)
+- I'm [29](age) years
 - I'm [60](age)
 - it's [90](age)
-- [55 years](age) old
+- [55](age) years old
 - [18](age)
 - [25](age)
+- [77](age)
 - my email address is [ahmedelsaye5@yahoo.com](email)
 - my email [seanomally1998@gmail.com](email)
 - it's [allennonnyj_1308@hotmail.com](email)
@@ -107,6 +108,7 @@
 - I'm in [4 James St, Summer Hill Sydney, NSW 2130](location)
 - [in Sydney](location)
 
+
 ## intent:out_of_scope
 - no stop
 - stop this
@@ -118,7 +120,19 @@
 - i don't want to give you my address
 - nevermind
 - i changed my mind
-- fuck off 
-- how old are you 
-- how are you doing 
+- fuck off
+- how old are you
+- how are you doing
 - how are you
+
+## intent:bank
+- i'll pay with bank account
+- bank account
+
+## intent:paypal
+- i'll pay with Paypal
+- paypal
+
+## intent:credit_card
+- i'll pay with Credit Card
+- credit card

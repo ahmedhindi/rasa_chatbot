@@ -1,4 +1,3 @@
-
 ## happy 1
 * greet
   - utter_greet
@@ -14,6 +13,7 @@
   - form{"name":"user_info"}
   - form{"name":null}
   - utter_slots_values
+  - utter_ask_payment_option
 * goodbye
   - utter_goodbye
 
@@ -34,12 +34,14 @@
   - form{"name":"user_info"}
   - form{"name":null}
   - utter_slots_values
+  - utter_ask_payment_option  
 * out_of_scope
   - utter_wanna_continue
 * affirm
   - user_info
   - form{"name":null}
   - utter_slots_values
+  - utter_ask_payment_option
 * goodbye
   - utter_goodbye
 
@@ -61,6 +63,7 @@
   - form{"name":"user_info"}
   - form{"name":null}
   - utter_slots_values
+  - utter_ask_payment_option
 * out_of_scope
   - utter_wanna_continue
 * deny
@@ -87,4 +90,4 @@
 
 ## bot check
 * bot_challenge
- - utter_iamabot
+ - utter_iamabot -->
