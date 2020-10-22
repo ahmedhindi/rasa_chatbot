@@ -59,7 +59,7 @@
 - how to i return stuff
 - can i return items
 - what is the refund policy
-- can you refun me?
+- can you refund me?
 - can i get a refund?
 - can i return items?
 
@@ -106,7 +106,8 @@
 - [+61 7 7010 6995](phone)
 - i live at [1 Athol St, Leichhardt, NSW 2040](location)
 - I'm in [4 James St, Summer Hill Sydney, NSW 2130](location)
-- [in Sydney](location)
+- in [Sydney](location)
+- I live in [Sydney](location)
 
 
 ## intent:out_of_scope
@@ -118,7 +119,7 @@
 - what is the weather
 - i don't wanna share that
 - i don't want to give you my address
-- nevermind
+- never mind
 - i changed my mind
 - fuck off
 - how old are you
@@ -136,3 +137,8 @@
 ## intent:credit_card
 - i'll pay with Credit Card
 - credit card
+
+## intent:post_code
+- it's [0872](post_code)
+- [0872](post_code)
+- my postcode is [3586](post_code)

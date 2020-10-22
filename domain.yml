@@ -2,28 +2,28 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet
-- goodbye
-- affirm
-- deny
-- bot_challenge
-- how_it_works
-- returns
-- thanks
-- who_wins
-- inform
-- out_of_scope
-- talk_to_human
-- bank
-- credit_card
-- paypal
-- happy
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - how_it_works
+  - returns
+  - thanks
+  - who_wins
+  - inform
+  - out_of_scope
+  - talk_to_human
+  - bank
+  - credit_card
+  - paypal
+  - happy
 entities:
-- name
-- email
-- phone
-- location
-- age
+  - name
+  - email
+  - phone
+  - location
+  - age
 slots:
   age:
     type: unfeaturized
@@ -37,102 +37,119 @@ slots:
     type: unfeaturized
 responses:
   utter_ask_age:
-  - text: What's you age?
+    - text: What's you age?
   utter_ask_email:
-  - text: what's your Email address?
+    - text: what's your Email address?
   utter_ask_location:
-  - text: where are you located?
+    - text: where are you located?
   utter_ask_name:
-  - text: What's your name?
+    - text: What's your name?
   utter_ask_phone:
-  - text: What's your phone number?
+    - text: What's your phone number?
   utter_goodbye:
-  - text: Bye
+    - text: Bye
   utter_greet:
-  - text: Hello there.
+    - text: Hello there.
   utter_how_it_works:
-  - text: You simply register onto the platform and once we confirm your email and
-      CC details, you then submit a bidding application based on your maximum bid,
-      coupled with some simple questions and requests.
+    - text:
+        You simply register onto the platform and once we confirm your email and
+        CC details, you then submit a bidding application based on your maximum bid,
+        coupled with some simple questions and requests.
   utter_how_it_works_q:
-  - text: Do you want to know how our service works?
+    - text: Do you want to know how our service works?
   utter_how_u_win_q:
-  - text: Do you want to know how you can get selected?
+    - text: Do you want to know how you can get selected?
   utter_iamabot:
-  - text: I am a chatbot.
+    - text: I am a chatbot.
   utter_returns:
-  - text: Please review our Returns Policy www.bargainbid.com.au/returns
+    - text: Please review our Returns Policy www.bargainbid.com.au/returns
   utter_slots_values:
-  - text: "Here's your data:\n  name: {name}\n  email: {email}\n  location: {location}\n\
-      \  age: {age}\n  phone: {phone}\n"
+    - text:
+        "Here's your data:\n  name: {name}\n  email: {email}\n  location: {location}\n\
+        \  age: {age}\n  phone: {phone}\n"
   utter_talk_to_human_response:
-  - text: Unfortunately this is purely an online service so if you have any questions
-      please email our team on sales@bargainbid.com.au
+    - text:
+        Unfortunately this is purely an online service so if you have any questions
+        please email our team on sales@bargainbid.com.au
   utter_wanna_continue:
-  - text: do you want to continue by providing the rest of the information?
+    - text: do you want to continue by providing the rest of the information?
   utter_who_wins:
-  - text: "We at Bargain Bid will allocate winning bids to applicants who we feel\
-      \ is best suited to the product, on offer. \n  Furthermore the highest bid will\
-      \ not necessarily win the auction, as information you enter will allow our automated\
-      \ system to determine the most suitable buyer based on the questionnaire and\
-      \ also a buyer’s ability to further promote our products to friends and social\
-      \ media."
+    - text:
+        "We at Bargain Bid will allocate winning bids to applicants who we feel\
+        \ is best suited to the product, on offer. \n  Furthermore the highest bid will\
+        \ not necessarily win the auction, as information you enter will allow our automated\
+        \ system to determine the most suitable buyer based on the questionnaire and\
+        \ also a buyer’s ability to further promote our products to friends and social\
+        \ media."
   utter_would_you_like_to_continue:
-  - text: Would you like to continue by giving me your information?
+    - text: Would you like to continue by giving me your information?
   utter_youre_welcome:
-  - text: you're welcome
+    - text: you're welcome
   utter_congrats_on_registering:
-  - text: "Congratulations you have qualified for the Bargain Bid process. \n Please\
-      \ nominate your product from our portal www.bargainbuy.com.au"
+    - text: "Congratulations you have qualified for the Bargain Bid process."
   utter_ask_for_product_info:
-  - text: Please also nominate below about your request for this product.
+    - text: Please also nominate below about your request for this product.
   utter_ask_for_postcode:
-  - text: Please indicate your post code so our system can determine your freight
-      costs.
+    - text:
+        Please indicate your post code so our system can determine your freight
+        costs.
   utter_ask_payment_option:
-  - buttons:
-    - payload: /bank
-      title: Direct Bank Deposit
-    - payload: /paypal
-      title: 'Paypal '
-    - payload: /credit_card
-      title: Credit Card
-    text: How do you propose to pay for this transaction, should your Bargain Bid
-      be successful?
+    - buttons:
+        - payload: /bank
+          title: Direct Bank Deposit
+        - payload: /paypal
+          title: "Paypal "
+        - payload: /credit_card
+          title: Credit Card
+      text:
+        How do you propose to pay for this transaction, should your Bargain Bid
+        be successful?
   utter_ask_buy_another:
-  - text: Based on this purchase would you be willing to buy another product on our
-      portal www.bargainbuy.com.au ?
+    - text:
+        Based on this purchase would you be willing to buy another product on our
+        portal www.bargainbuy.com.au ?
   utter_ask_if_share:
-  - text: If you are successful in your Bargain Bid would you share this purchase
-      on Social Media?
-  utter_ask_to_share_with_freinds:
-  - text: 7.Can you please refer us to as many emails to friends and family this Bargain
-      Bid or indeed our main portal www.bargainbuy.com.au?
+    - text:
+        If you are successful in your Bargain Bid would you share this purchase
+        on Social Media?
+  utter_ask_to_share_with_friends:
+    - text:
+        7.Can you please refer us to as many emails to friends and family this Bargain
+        Bid or indeed our main portal www.bargainbuy.com.au?
+  utter_thanks_for_using:
+    - text: "thank you for using www.bargainbuy.com.au "
+  utter_more_info:
+    - text: "to complete the process of purchasing a product we will need more information about the product and your location. would you like to continue by providing the information?"
+  utter_choose_product:
+    - text: "nominate your product from our portal www.bargainbuy.com.au"
 actions:
-- utter_ask_age
-- utter_ask_email
-- utter_ask_location
-- utter_wanna_continue
-- utter_ask_name
-- utter_ask_phone
-- utter_goodbye
-- utter_greet
-- utter_how_it_works
-- utter_how_it_works_q
-- utter_how_u_win_q
-- utter_iamabot
-- utter_returns
-- utter_talk_to_human_response
-- utter_who_wins
-- utter_would_you_like_to_continue
-- utter_youre_welcome
-- utter_slots_values
-- utter_congrats_on_registering
-- utter_ask_for_product_info
-- utter_ask_for_postcode
-- utter_ask_payment_option
-- utter_ask_buy_another
-- utter_ask_if_share
-- utter_ask_to_share_with_freinds
+  - utter_ask_age
+  - utter_ask_email
+  - utter_ask_location
+  - utter_wanna_continue
+  - utter_ask_name
+  - utter_ask_phone
+  - utter_goodbye
+  - utter_greet
+  - utter_how_it_works
+  - utter_how_it_works_q
+  - utter_how_u_win_q
+  - utter_iamabot
+  - utter_returns
+  - utter_talk_to_human_response
+  - utter_who_wins
+  - utter_would_you_like_to_continue
+  - utter_youre_welcome
+  - utter_slots_values
+  - utter_congrats_on_registering
+  - utter_ask_for_product_info
+  - utter_ask_for_postcode
+  - utter_ask_payment_option
+  - utter_ask_buy_another
+  - utter_ask_if_share
+  - utter_ask_to_share_with_friends
+  - utter_thanks_for_using
+  - utter_more_info
+  - utter_choose_product
 forms:
-- user_info
+  - user_info

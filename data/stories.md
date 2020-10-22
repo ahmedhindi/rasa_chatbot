@@ -13,11 +13,20 @@
   - form{"name":"user_info"}
   - form{"name":null}
   - utter_slots_values
-  - utter_ask_payment_option
-* goodbye
+  - utter_congrats_on_registering
+  - utter_more_info
+* affirm
+  - utter_ask_payment_option  
+  - utter_ask_for_postcode
+* post_code  
+  - utter_ask_buy_another
+* affirm
+  - utter_ask_if_share
+* affirm
+  - utter_ask_to_share_with_friends
+* affirm
+  - utter_thanks_for_using
   - utter_goodbye
-
-
 
 ## happy 2
 * greet
@@ -34,18 +43,6 @@
   - form{"name":"user_info"}
   - form{"name":null}
   - utter_slots_values
-  - utter_ask_payment_option  
-* out_of_scope
-  - utter_wanna_continue
-* affirm
-  - user_info
-  - form{"name":null}
-  - utter_slots_values
-  - utter_ask_payment_option
-* goodbye
-  - utter_goodbye
-
-
 
 
 ## sad 1
@@ -80,6 +77,8 @@
 * deny
   - utter_goodbye
 
+
+
 ## returns
 * returns
  - utter_returns
@@ -90,4 +89,4 @@
 
 ## bot check
 * bot_challenge
- - utter_iamabot -->
+ - utter_iamabot
