@@ -41,3 +41,16 @@ class UserInfo(FormAction):
                 self.from_intent(intent="deny", value="None"),
             ],
         }
+
+
+class User_Search(Action):
+    def name(self) -> Text:
+        return "user_search"
+
+    def run(
+        self,
+        dispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
+        pass

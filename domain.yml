@@ -1,6 +1,5 @@
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+version: "2.0"
+
 intents:
   - greet
   - goodbye
@@ -11,31 +10,71 @@ intents:
   - returns
   - thanks
   - who_wins
-  - inform
   - out_of_scope
   - talk_to_human
-  - bank
-  - credit_card
-  - paypal
-  - happy
+  - inform
+  - bet
+  - register
+
 entities:
   - name
   - email
   - phone
   - location
   - age
+  - post_code
+
 slots:
   age:
-    type: unfeaturized
+    type: float
+    influence_conversation: false
+    auto_fill: false
   email:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    auto_fill: false
   location:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    auto_fill: false
   name:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    auto_fill: false
   phone:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    auto_fill: false
+  post_code:
+    type: text
+    influence_conversation: false
+    auto_fill: false
+
+forms:
+  user_info:
+    name:
+      - type: from_entity
+        entity: name
+    email:
+      - type: from_entity
+        entity: email
+    location:
+      - type: from_entity
+        entity: location
+    phone:
+      - type: from_entity
+        entity: phone
+    age:
+      - type: from_entity
+        entity: age
+    post_code:
+      - type: from_entity
+        entity: post_code
+
 responses:
+  utter_are_you_new:
+    - text: Are you a new user?
+
   utter_ask_age:
     - text: What's you age?
   utter_ask_email:
@@ -85,8 +124,10 @@ responses:
     - text: Would you like to continue by giving me your information?
   utter_youre_welcome:
     - text: you're welcome
+  utter_out_of_context:
+    - text: I can't help you with that.
   utter_congrats_on_registering:
-    - text: "Congratulations you have qualified for the Bargain Bid process."
+    - text: Congratulations you have qualified for the Bargain Bid process.
   utter_ask_for_product_info:
     - text: Please also nominate below about your request for this product.
   utter_ask_for_postcode:
@@ -119,37 +160,22 @@ responses:
   utter_thanks_for_using:
     - text: "thank you for using www.bargainbuy.com.au "
   utter_more_info:
-    - text: "to complete the process of purchasing a product we will need more information about the product and your location. would you like to continue by providing the information?"
+    - text:
+        to complete the process of purchasing a product we will need more information
+        about the product and your location. would you like to continue by providing
+        the information?
   utter_choose_product:
-    - text: "nominate your product from our portal www.bargainbuy.com.au"
+    - text: nominate your product from our portal www.bargainbuy.com.au
+  utter_what_i_can_do:
+    - text: Welcome to www.bargainbuy.com.au
+        Here is what I can do for you
+        I can register you and explain how the service work and out process of selecting winners
+        and help you place bet/bets.
+        So how can i help you?
+  utter_ask_post_code:
+    - text: What's your post code?
 actions:
-  - utter_ask_age
-  - utter_ask_email
-  - utter_ask_location
-  - utter_wanna_continue
-  - utter_ask_name
-  - utter_ask_phone
-  - utter_goodbye
-  - utter_greet
-  - utter_how_it_works
-  - utter_how_it_works_q
-  - utter_how_u_win_q
-  - utter_iamabot
-  - utter_returns
-  - utter_talk_to_human_response
-  - utter_who_wins
-  - utter_would_you_like_to_continue
-  - utter_youre_welcome
-  - utter_slots_values
-  - utter_congrats_on_registering
-  - utter_ask_for_product_info
-  - utter_ask_for_postcode
-  - utter_ask_payment_option
-  - utter_ask_buy_another
-  - utter_ask_if_share
-  - utter_ask_to_share_with_friends
-  - utter_thanks_for_using
-  - utter_more_info
-  - utter_choose_product
-forms:
-  - user_info
+  - user_search
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

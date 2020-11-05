@@ -1,0 +1,163 @@
+version: "2.0"
+nlu:
+  - intent: bet
+    examples: |
+      - i want to bet on a product
+      - i want to bet
+      - how can i bet
+      - i want to do betting
+      - how to start betting?
+
+  - intent: register
+    examples: |
+      - I want to register
+      - register
+      - register me
+      - sign me up
+      - sign me up
+      - i want to sign up
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - good morning
+      - good evening
+      - hey there
+      - yo
+      - how is it going
+      - how u doing
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you around
+      - see you later
+      - see ya
+      - see you
+  - intent: affirm
+    examples: |
+      - yes
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - yep
+      - yup
+      - ofcourse
+      - aha
+      - ok
+      - okay great
+      - why not
+  - intent: deny
+    examples: |
+      - no
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - nope
+      - no thanks
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+  - intent: how_it_works
+    examples: |
+      - So how does it work?
+      - how does it work
+      - how do you work
+      - how does the website work
+      - and does the bidding work?
+  - intent: returns
+    examples: |
+      - what is the returns policy
+      - how to i return stuff
+      - can i return items
+      - what is the refund policy
+      - can you refund me?
+      - can i get a refund?
+      - can i return items?
+  - intent: talk_to_human
+    examples: |
+      - can i talk to a human please
+      - can i talk to a real person
+      - can i chat with a real person
+      - i don't want to talk to a chatbot
+      - i don't want to talk to a robot
+      - i want to chat with a real human
+  - intent: thanks
+    examples: |
+      - thank you
+      - thanks
+      - cheers mate
+      - thanks mate
+      - thank you so much
+  - intent: who_wins
+    examples: |
+      - How do determin the winning bid?
+      - How is the winning bid determined?
+      - How do i win the bid
+      - who wins the bid
+      - who gets the item
+  - intent: inform
+    examples: |
+      - my name is [Ahmed Hindi](name)
+      - it's [Denzel Washington](name)
+      - [Ashma Logan](name)
+      - I'm [29](age) years
+      - I'm [60](age)
+      - it's [90](age)
+      - [55](age) years old
+      - [18](age)
+      - [25](age)
+      - [77](age)
+      - my email address is [ahmedelsaye5@yahoo.com](email)
+      - my email [seanomally1998@gmail.com](email)
+      - it's [allennonnyj_1308@hotmail.com](email)
+      - [ahmedelsaye5@yahoo.com](email)
+      - [allennonnyj_1308@hotmail.com](email)
+      - my phone number is [67642962](phone)
+      - my nimber is [(02)67487077](phone)
+      - it's [+61 7 7010 4502](phone)
+      - [61770104502](phone)
+      - [+61 7 7010 6995](phone)
+      - i live at [1 Athol St, Leichhardt, NSW 2040](location)
+      - I'm in [4 James St, Summer Hill Sydney, NSW 2130](location)
+      - in [Sydney](location)
+      - I live in [Sydney](location)
+      - My post code is [2905](post_code) 
+      - [1122](post_code)
+
+  - intent: out_of_scope
+    examples: |
+      - no stop
+      - stop this
+      - wait a minute
+      - i don't care
+      - i wanna get a pizza
+      - what is the weather
+      - i don't wanna share that
+      - i don't want to give you my address
+      - never mind
+      - i changed my mind
+      - fuck off
+      - how old are you
+      - how are you doing
+      - how are you
+
+  - regex: post_code
+    examples: |
+      - ^(?:(?:[2-8]\d|9[0-7]|0?[28]|0?9(?=09))(?:\d{2}))$
+  - regex: age
+    examples: |
+      - \d{2}
+  # - regex: phone
+  #   examples: |
+  #     - (?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$
+  # - regex: email
+  #   examples: |
+  #     - [\w-\.]+@([\w-]+\.)+[\w-]{2,4}$

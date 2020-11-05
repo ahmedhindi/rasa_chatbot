@@ -1,0 +1,20 @@
+version: "2.0"
+
+stories:
+  - story: Happy start new user
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_are_you_new
+      - intent: affirm
+      - intent: utter_ask_email
+      - intent: user_search
+      - action: utter_what_i_can_do
+  - story: Happy start old user
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_are_you_new
+      - action: deny
+      - action: utter_ask_email
+      - action: user_search
